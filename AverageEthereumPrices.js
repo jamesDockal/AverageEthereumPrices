@@ -12,7 +12,7 @@ let averagesString = ''
 
 function readTheFile(){
   try{
-    return fs.readFileSync(`${Yourdirectory}\\AverageEthereumPrices\\aaaa.txt`, 'utf-8').split('\n') 
+    return fs.readFileSync(`${Yourdirectory}\\AverageEthereumPrices\\infoList.txt`, 'utf-8').split('\n') 
   }catch(err){
     console.log(' Error to found the path \n Your directory maybe is wrong')
   }
