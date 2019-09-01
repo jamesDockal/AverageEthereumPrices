@@ -17,9 +17,10 @@ function readTheFile(){
     console.log(' Error to found the path \n Your directory maybe is wrong')
   }
 }
+const pricesList = readTheFile()
 
-if(readTheFile()){
-  for (price of readTheFile()) {
+if(pricesList){
+  for (price of pricesList) {
     let [data, open, high, low, close, volume, marketCap] = price.replace(/,/g, '.').replace('.', ',').split('\t')
   
     sums.open += parseFloat(open)
